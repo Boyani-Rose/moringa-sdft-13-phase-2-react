@@ -1,3 +1,4 @@
+import TransactionRow from "./TransactionRow"
 export default function TransactionsTable(){
 
     return(
@@ -10,7 +11,13 @@ export default function TransactionsTable(){
                     <th>Action</th>
                 </tr>
             </thead>
+            <tbody className="table table-striped">
+            <TransactionRow/>
+            </tbody>
         </table>
+
+        
+
     )
 
 }
